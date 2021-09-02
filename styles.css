@@ -1,0 +1,118 @@
+body {
+	background: #143f6b;
+}
+
+.new-prayer-point-form {
+	background: white;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+#new-prayer-point {
+	border: none;
+	height: 50px;
+	font-size: 36px;
+	border-radius: 10px;
+	background: #143f6b;
+	color: white;
+}
+
+.add-prayer-point-btn {
+	padding: 3%;
+	font-size: 25px;
+	border-radius: 10px;
+	background: #143f6b;
+	color: white;
+	border: none;
+}
+
+.button {
+	text-align: right;
+}
+
+label {
+	width: 200px;
+	height: 50px;
+	font-size: 36px;
+	font-family: Arial;
+	color: #143f6b;
+}
+
+.added-points ol li {
+	list-style: none;
+	color: #143f6b;
+	background: white;
+	padding: 1.5%;
+	border-radius: 10px;
+	font-size: 40px;
+	font-family: Arial;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.added-points ol li:hover {
+	background: #f5f2f5;
+}
+
+.prayer-point-list {
+	text-align: left;
+}
+
+.modal-wrapper {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+}
+
+.modal {
+	text-align: center;
+	background: white;
+	width: 320px;
+	border-radius: 10px;
+	font-family: Arial;
+	height: 230px;
+	border-bottom: 1px solid black;
+}
+
+.modal-title {
+	background: purple;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.modal-text {
+	/* 	padding-bottom: 9%; */
+	font-size: 1.3rem;
+}
+
+.okay-button,
+.cancel-button {
+	background: #143f6b;
+	color: white;
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+}
+
+@media (max-width: 1028px) {
+	.add-prayer-point-btn {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	input {
+		width: 96%;
+		border: none;
+		padding: 2%;
+		margin-top: 10px;
+	}
+}
+

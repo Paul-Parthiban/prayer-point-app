@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pray.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Prayer Point App</title>
+</head>
+<body>
+    <div class="new-prayer-point-form">
+        <label for="new-prayer-point">Prayer Point: </label>
+        <input type="text" id="new-prayer-point">
+        <br>
+        <br>
+        <div class="button">
+            <button onclick="addPrayerPoint()" class="add-prayer-point-btn">Add Prayer Point</button>
+        </div>
+    </div>
+    <div class="added-points">
+        <ol class="prayer-point-list">
+        </ol>
+    </div>
+    
+    <div class="modal-wrapper" onclick="closer()">
+        <div class="modal">
+            <h1 class="modal-title">Invalid Prayer Point</h1>
+            <p class="modal-text">Add A Valid Prayer <br />Point</p>
+        </div>
+    </div>
+    
+    <div class="modal-wrapper" onclick="closer()">
+        <div class="modal">
+            <h1 class="modal-title">Are You Sure?</h1>
+            <p class="modal-text">
+                Are You Sure You Want to delete this Prayer Point. Once you click Okay there NO going back!
+            </p>
+            <button class="okay-button">Okay</button>
+            <button class="cancel-button">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
